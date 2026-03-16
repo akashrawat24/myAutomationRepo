@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/akashrawat24/myAutomation.git', branch: 'main'
+                git url: 'https://github.com/akashrawat24/myAutomationRepo.git', branch: 'main'
             }
         }
         stage('Build Docker Image') {
