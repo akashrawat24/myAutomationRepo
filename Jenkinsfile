@@ -2,7 +2,7 @@ pipeline {
     agent { label 'ecs' } // runs on slave
     environment {
         AWS_REGION = 'us-east-2'
-        ECR_REPO = '055.dkr.ecr.us-east-2.amazonaws.com/jenkins-ecs-demo'
+        ECR_REPO = '050752637225.dkr.ecr.us-east-2.amazonaws.com/jenkins-ecs-demo'
         IMAGE_TAG = "${GIT_COMMIT}"
     }
     stages {
